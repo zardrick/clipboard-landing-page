@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Project Screenshot](./screenshot.jpg)
+![Project Screenshot](./design/desktop-preview.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/zardrick/clipboard-landing-page)
-- Live Site URL: [Add live site URL here](https://zardrick.github.io/clipboard-landing-page)
+- Solution URL: [Github](https://github.com/zardrick/clipboard-landing-page)
+- Live Site URL: [Live Site](https://zardrick.github.io/clipboard-landing-page)
 
 ## My process
 
