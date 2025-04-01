@@ -1,0 +1,30 @@
+@use "variables" as *;
+
+@mixin button {
+    display: inline-block;
+    padding: 1.125rem 2rem;
+    border-radius: 30px;
+    font-size: 1.1875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+    
+    &.btn-ios {
+      background: $primary-color;
+    }
+  
+    &.btn-mac {
+      background: $secondary-color;
+    }
+  
+    &:hover {
+      opacity: 0.8;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 48rem) { // 768px
+      @content;
+    }
+}

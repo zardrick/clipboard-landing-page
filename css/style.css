@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+  background: hsl(0, 0%, 100%) url("/images/bg-header-mobile.png") no-repeat center top;
+  background-size: contain;
+}
+@media (min-width: 48rem) {
+  body {
+    background: hsl(0, 0%, 100%) url("/images/bg-header-desktop.png") no-repeat center top;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.3;
+  color: hsl(210, 10%, 33%);
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding-inline: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .container {
+    padding-inline: 0;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero .logo {
+  margin-block: 7.5rem 4rem;
+}
+.hero p {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+.hero .buttons {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.hero .buttons .btn {
+  display: inline-block;
+  padding: 1.125rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  color: white;
+}
+.hero .buttons .btn.btn-ios {
+  background: hsl(171, 66%, 44%);
+}
+.hero .buttons .btn.btn-mac {
+  background: hsl(233, 100%, 69%);
+}
+.hero .buttons .btn:hover {
+  opacity: 0.8;
+}
+@media (min-width: 48rem) {
+  .hero {
+    margin: 0 auto;
+    max-width: 45rem;
+  }
+  .hero .logo {
+    margin-block: 8rem 3.5rem;
+  }
+  .hero h1 {
+    font-size: 2.625rem;
+  }
+  .hero p {
+    font-size: 1.25rem;
+  }
+  .hero .buttons {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.features {
+  margin-top: 10rem;
+}
+.features h2 {
+  font-size: 1.6875rem;
+}
+.features p {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+.features .feature-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.features .feature-content .feature-list {
+  margin-top: 3.5rem;
+}
+.features .feature-content .feature-list h3 {
+  font-size: 1.5rem;
+}
+.features .feature-content .feature-list p {
+  margin-bottom: 3rem;
+}
+@media (min-width: 48rem) {
+  .features {
+    margin-top: 9.25rem;
+  }
+  .features h2 {
+    font-size: 2.1875rem;
+  }
+  .features p {
+    margin-top: 1.25rem;
+    margin-inline: auto;
+    max-width: 45rem;
+    font-size: 1.125rem;
+  }
+  .features .feature-content {
+    margin-top: 5rem;
+    flex-direction: row;
+  }
+  .features .feature-content img {
+    max-width: 50%;
+    margin-left: -30px;
+  }
+  .features .feature-content .feature-list {
+    margin-inline: 7rem;
+    text-align: left;
+  }
+  .features .feature-content .feature-list p {
+    margin-bottom: 4rem;
+  }
+}
+
+.access {
+  margin-top: 8rem;
+}
+.access h2 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+.access p {
+  margin-block: 1rem 3.5rem;
+  line-height: 1.6;
+}
+@media (min-width: 48rem) {
+  .access {
+    max-width: 45rem;
+    margin-top: 10rem;
+    margin-inline: auto;
+  }
+  .access h2 {
+    font-size: 2.25rem;
+  }
+  .access p {
+    font-size: 1.125rem;
+    margin-block: 1.375rem 6rem;
+  }
+}
+
+.workflow {
+  margin-top: 5.5rem;
+}
+.workflow h2 {
+  font-size: 1.75rem;
+}
+.workflow p {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+.workflow .workflow-items {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-items: center;
+  margin-top: 5.75rem;
+}
+.workflow .workflow-items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.workflow .workflow-items .item img {
+  margin-bottom: 2.5rem;
+}
+.workflow .workflow-items .item h3 {
+  font-size: 1.9rem;
+}
+@media (min-width: 48rem) {
+  .workflow {
+    margin-top: 4.5rem;
+  }
+  .workflow h2 {
+    font-size: 2.25rem;
+  }
+  .workflow p {
+    font-size: 1.125rem;
+    margin-top: 0.875rem;
+  }
+  .workflow .workflow-items {
+    flex-direction: row;
+    gap: 1.875rem;
+    max-width: 70rem;
+    margin-top: 4.5rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+  .workflow .workflow-items p {
+    margin-top: 1.5rem;
+  }
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 8rem;
+}
+@media (min-width: 48rem) {
+  .clients {
+    margin-top: 10rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.cta {
+  margin-block: 10.5rem;
+}
+.cta h2 {
+  font-size: 1.75rem;
+}
+.cta p {
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+.cta .buttons {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.cta .buttons .btn {
+  display: inline-block;
+  padding: 1.125rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  color: white;
+}
+.cta .buttons .btn.btn-ios {
+  background: hsl(171, 66%, 44%);
+}
+.cta .buttons .btn.btn-mac {
+  background: hsl(233, 100%, 69%);
+}
+.cta .buttons .btn:hover {
+  opacity: 0.8;
+}
+@media (min-width: 48rem) {
+  .cta {
+    margin-block: 10rem 9rem;
+  }
+  .cta h2 {
+    font-size: 2.25rem;
+  }
+  .cta p {
+    font-size: 1.125rem;
+    margin-top: 1rem;
+    margin-inline: auto;
+    max-width: 45rem;
+  }
+  .cta .buttons {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: hsl(220, 18%, 97%);
+  padding-block: 3rem;
+}
+footer img {
+  width: 3.75rem;
+}
+footer .footer-links {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+footer .footer-links a {
+  color: hsl(210, 10%, 33%);
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+footer .footer-links a:hover {
+  color: hsl(171, 66%, 44%);
+}
+footer .social-icons {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+footer .social-icons img {
+  width: 1.5rem;
+}
+@media (min-width: 48rem) {
+  footer {
+    flex-direction: row;
+    align-items: center;
+    padding-inline: 10rem;
+  }
+  footer .footer-links {
+    margin-left: 8rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .social-icons {
+    margin-left: auto;
+  }
+  footer .social-icons img {
+    min-width: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
